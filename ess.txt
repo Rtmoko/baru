@@ -1,0 +1,49 @@
+1. Apa fungsi utama halaman login.php dalam aplikasi?
+
+Jawaban:
+Untuk masuk ke aplikasi dan memastikan yang pakai adalah pengguna yang benar.
+
+2. Mengapa setiap halaman harus memiliki pengecekan session?
+
+Jawaban:
+Supaya halaman hanya bisa dibuka oleh orang yang sudah login, bukan orang sembarangan.
+
+3. Apa tujuan penggunaan redirect setelah login berhasil?
+
+Jawaban:
+Biar setelah login langsung pindah ke halaman utama, bukan tetap di halaman login.
+
+4. Mengapa tabel user perlu kolom level (admin/petugas)?
+
+Jawaban:
+Agar aplikasi tahu siapa yang punya hak lebih (admin) dan siapa yang hanya petugas biasa.
+
+5. Apa kegunaan fitur CRUD pada tabel barang?
+
+Jawaban:
+Untuk menambah barang, melihat barang, mengubah data barang, dan menghapus barang.
+
+6. Mengapa tabel transaksi harus memakai JOIN dengan tabel barang?
+
+Jawaban:
+Karena di transaksi cuma ada id barang, jadi perlu JOIN buat menampilkan nama barang dan data lengkapnya.
+
+7. Apa fungsi form transaksi untuk mencatat barang masuk/keluar?
+
+Jawaban:
+Untuk mencatat setiap barang yang masuk atau keluar supaya stok tetap akurat.
+
+8. Mengapa data stok tidak disimpan di kolom khusus?
+
+Jawaban:
+Karena stok bisa dihitung otomatis dari transaksi masuk dan keluar, jadi lebih aman dan tidak mudah salah.
+
+9. Apa manfaat menampilkan total barang dan total user pada dashboard?
+
+Jawaban:
+Supaya admin bisa cepat melihat jumlah barang dan jumlah user secara keseluruhan.
+
+10. Mengapa backend aksi_user.php harus melakukan hashing password?
+
+Jawaban:
+Agar password yang disimpan tidak bisa dibaca orang lain kalau database bocor.
